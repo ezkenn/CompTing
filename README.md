@@ -1,6 +1,6 @@
-# Company Accounting Mobile App
+# CompTing (Company Accounting) Mobile App
 
-Aplikasi mobile pencatatan keuangan operasional perusahaan yang dirancang khusus untuk kebutuhan bisnis harian. Aplikasi ini memfokuskan alur pada pencatatan transaksi di lapangan, pengelolaan utang-piutang, persetujuan bertingkat (*approval*), pemantauan kas, serta pembuatan laporan keuangan tanpa kompleksitas sistem ERP penuh.
+CompTing adalah aplikasi mobile pencatatan keuangan operasional perusahaan yang dirancang khusus untuk kebutuhan bisnis harian. Aplikasi ini memfokuskan alur pada pencatatan transaksi di lapangan, pengelolaan utang-piutang, persetujuan bertingkat (*approval*), pemantauan kas, serta pembuatan laporan keuangan tanpa kompleksitas sistem ERP penuh.
 
 ## Peran Pengguna (Role-Based Access Control)
 
