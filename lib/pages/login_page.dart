@@ -45,7 +45,7 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const SizedBox(height: 20),
+              const SizedBox(height: 60),
               // --- LOGO HEADER ---
               Container(
                 padding: const EdgeInsets.all(12),
@@ -275,7 +275,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           SizedBox(width: 8),
                           Icon(
                             Icons.arrow_forward_rounded,
-                            color: Color(0xFF00A980), // Panah hijau
+                            // color: Color(0xFF00A980), // Panah hijau
+                            color: Color.fromARGB(
+                              255,
+                              255,
+                              255,
+                              255,
+                            ), // Panah hijau
                             size: 20,
                           ),
                         ],
@@ -287,39 +293,39 @@ class _LoginScreenState extends State<LoginScreen> {
               const SizedBox(height: 20),
 
               // --- FOOTER ---
-              Column(
-                children: [
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.gpp_good_outlined, // Ikon shield centang
-                        color: Color(0xFF00A980),
-                        size: 18,
-                      ),
-                      SizedBox(width: 6),
-                      Text(
-                        'v2.4.0 Enterprise Edition',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 12,
-                          color: Color(0xFF1E293B),
-                        ),
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    'Dilindungi Enkripsi SSL 256-bit • Sesuai Standar Akuntansi\nPSAK • Audit Trail Otomatis',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.blueGrey.shade400,
-                      fontSize: 12,
-                      height: 1.5,
-                    ),
-                  ),
-                ],
-              ),
+              // Column(
+              //   children: [
+              //     const Row(
+              //       mainAxisAlignment: MainAxisAlignment.center,
+              //       children: [
+              //         Icon(
+              //           Icons.gpp_good_outlined, // Ikon shield centang
+              //           color: Color(0xFF00A980),
+              //           size: 18,
+              //         ),
+              //         SizedBox(width: 6),
+              //         Text(
+              //           'v2.4.0 Enterprise Edition',
+              //           style: TextStyle(
+              //             fontWeight: FontWeight.bold,
+              //             fontSize: 12,
+              //             color: Color(0xFF1E293B),
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //     const SizedBox(height: 8),
+              //     Text(
+              //       'Dilindungi Enkripsi SSL 256-bit • Sesuai Standar Akuntansi\nPSAK • Audit Trail Otomatis',
+              //       textAlign: TextAlign.center,
+              //       style: TextStyle(
+              //         color: Colors.blueGrey.shade400,
+              //         fontSize: 12,
+              //         height: 1.5,
+              //       ),
+              //     ),
+              //   ],
+              // ),
               const SizedBox(height: 20),
             ],
           ),
