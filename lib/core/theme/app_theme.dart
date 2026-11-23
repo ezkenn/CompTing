@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 abstract final class AppTheme {
-  static ThemeData get light {
+  static final ThemeData light = _buildLightTheme();
+
+  static ThemeData _buildLightTheme() {
     final poppinsFamily = GoogleFonts.poppins().fontFamily;
 
     return ThemeData(
@@ -115,7 +117,8 @@ abstract final class AppTheme {
         indicatorColor: AppColors.primary.withValues(alpha: 0.12),
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           final selected = states.contains(WidgetState.selected);
-          return GoogleFonts.poppins(
+          return TextStyle(
+            fontFamily: poppinsFamily,
             fontSize: 12,
             fontWeight: selected ? FontWeight.w600 : FontWeight.w500,
             color: selected ? AppColors.primary : AppColors.textSecondary,
